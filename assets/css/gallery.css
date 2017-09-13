@@ -1,0 +1,143 @@
+body{
+    font-family: Arial;
+    font-size: 14px;
+}
+
+ul.preview-gallery{
+    list-style: none;
+    padding: 5px;
+    background: #EEE;
+    overflow: auto;
+    border: 1px solid #AAA;
+    margin-top: 0px;
+}
+
+ul.preview-gallery li{
+    float: left;
+    margin: 6px;
+    width: 210px;
+    height: 210px;
+    background: #FFF;
+    border: 2px solid #AAA;
+}
+ul.preview-gallery li p{
+    font-size: 16px;
+    text-align: center;
+}
+ul.preview-gallery img{
+    width: 180px;
+    margin: 15px;
+    border: 0px;
+    margin-top: 17px;
+}
+
+/*Включает красивое обрамление вокруг галереи изображений*/
+ul.gallery{
+    list-style: none;
+    padding: 5px;
+    background: #EEE;
+    overflow: auto;
+    border: 1px solid #AAA;
+    margin-top: 0px;
+}
+
+/*Создает вокруг изображения прямоугольник стандартных ширины и высоты*/
+ul.gallery li{
+    float: left;
+    margin: 3px;
+    width: 110px;
+    height: 110px;
+    background: #FFF;
+    border: 2px solid #AAA;
+}
+
+
+/*Горизонтальное изображение шириной 100px*/
+ul.gallery img{
+    width: 100px;
+    margin: 5px;
+    border: 0px;
+    margin-top: 17px;
+}
+
+
+
+/*Вертикальные изображения высотой 100px*/
+ul.gallery li.tall img{
+    height: 100px;
+    width: auto;
+    margin-top: 5px;
+    margin-left: 17px;
+}
+
+#overlay{
+    background: #000;
+    opacity: 0.5;
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    cursor: pointer;
+    cursor: hand;
+}
+
+#gallery{
+    position: absolute;
+    width: 650px;
+    height: 510px;
+    background: #FFF;
+    z-index: 110;
+    display: none;
+}
+
+#gallery_title{
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+}
+
+#gallery img{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 640px;
+    height: 480px;
+    border: 0px;
+    z-index: 115;
+}
+
+#gallery.tall{
+    width: 430px;
+    height: 590px;
+}
+
+#gallery.tall img{
+    width: 420px;
+    height: 560px;
+}
+
+#gallery_prev, #gallery_next{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 120;
+    width: 60px;
+    text-align: center;
+    font-size: 12px;
+    padding: 4px;
+}
+
+#gallery_prev{
+    left: 0px;
+}
+
+#gallery_prev a, #gallery_next a{
+    color: #000;
+    text-decoration: none;
+}

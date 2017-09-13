@@ -1,0 +1,178 @@
+﻿Sat, 10 Dec 2016 12:57:24 +0300 : Запрашиваемая страница не найдена (Отсутствует метод контроллера: actionTest)
+Sat, 10 Dec 2016 12:57:25 +0300 : Запрашиваемая страница не найдена (Отсутствует метод контроллера: actionTest)
+Sat, 10 Dec 2016 12:57:27 +0300 : Запрашиваемая страница не найдена (Отсутствует метод контроллера: actionTest)
+Sat, 10 Dec 2016 13:01:04 +0300 : Ошибка в запросе.
+Sat, 10 Dec 2016 13:02:19 +0300 : Запрашиваемая страница не найдена (Отсутствует контроллер: Application\Controllers\N)
+Sat, 10 Dec 2016 13:52:37 +0300 : Запрашиваемая страница не найдена (Отсутствует контроллер: Application\Controllers\N)
+Sat, 10 Dec 2016 15:08:18 +0300 : Запрашиваемая страница не найдена (Отсутствует контроллер: Application\Controllers\N)
+Ошибка
+Sat, 10 Dec 2016 15:08:32 +0300 : Запрашиваемая страница не найдена (Отсутствует метод контроллера: action)
+Ошибка
+Mon, 12 Dec 2016 15:28:18 +0300 : Запрашиваемая страница не найдена (Отсутствует контроллер: Application\Controllers\N)
+Tue, 13 Dec 2016 14:38:27 +0300 : Запрашиваемая страница не найдена (Отсутствует контроллер: Application\Controllers\N)
+Wed, 14 Dec 2016 08:16:24 +0300 : Запрашиваемая страница не найдена (Отсутствует метод контроллера: action)
+Wed, 14 Dec 2016 12:01:16 +0300 : Запрашиваемая страница не найдена (Отсутствует контроллер: Application\Controllers\N)
+Wed, 14 Dec 2016 12:16:12 +0300 : Запрашиваемая страница не найдена (Отсутствует метод контроллера: action)
+Wed, 21 Dec 2016 15:12:22 +0300 : Ошибка в запросе.
+Wed, 21 Dec 2016 15:13:06 +0300 : Ошибка в запросе.
+Wed, 21 Dec 2016 15:13:35 +0300 : Ошибка в запросе.
+Wed, 21 Dec 2016 15:14:09 +0300 : Ошибка в запросе.
+Tue, 27 Dec 2016 12:17:26 +0300 : Ошибка в запросе.
+Tue, 27 Dec 2016 12:19:04 +0300 : Ошибка в запросе.
+Tue, 27 Dec 2016 12:20:45 +0300 : Ошибка в запросе.
+Tue, 27 Dec 2016 12:25:17 +0300 : Ошибка в запросе: SELECT * FROM users WHERE id = :id
+Tue, 27 Dec 2016 12:26:12 +0300 : Ошибка в запросе: SELECT * FROM users WHERE id = :id
+Tue, 27 Dec 2016 12:27:24 +0300 : Ошибка в запросе: SELECT * FROM users WHERE id = :id
+Tue, 27 Dec 2016 12:27:49 +0300 : Ошибка в запросе: SELECT * FROM users WHERE id = :id
+Tue, 27 Dec 2016 12:28:37 +0300 : Ошибка в запросе: SELECT * FROM users WHERE id = :id
+Tue, 27 Dec 2016 12:28:41 +0300 : Ошибка в запросе: SELECT * FROM users WHERE id = :id
+Tue, 27 Dec 2016 12:31:06 +0300 : Ошибка в запросе: SELECT * FROM users WHERE id = :id
+Tue, 27 Dec 2016 12:31:11 +0300 : Ошибка в запросе: SELECT * FROM users WHERE id = :id
+Tue, 27 Dec 2016 12:31:59 +0300 : Ошибка в запросе: SELECT * FROM users WHERE id = :id
+Tue, 27 Dec 2016 12:32:58 +0300 : Ошибка в запросе: SELECT * FROM users WHERE id = :id
+Tue, 27 Dec 2016 12:36:39 +0300 : Ошибка в запросе: SELECT * FROM users WHERE id = :id
+Tue, 27 Dec 2016 12:36:50 +0300 : Ошибка в запросе: SELECT * FROM users WHERE id = :id
+Tue, 27 Dec 2016 12:59:35 +0300 : Ошибка в запросе: SELECT * FROM users WHERE id = :id
+Mon, 02 Jan 2017 09:41:23 +0300 : Запрашиваемая страница не найдена (Отсутствует метод контроллера: action)
+Tue, 03 Jan 2017 10:16:05 +0300 : Ошибка в запросе.
+Tue, 03 Jan 2017 10:16:37 +0300 : Ошибка в запросе1.
+Tue, 03 Jan 2017 10:16:56 +0300 : Ошибка в запросе: INSERT INTO sessions (id_user,sid,time_start,time_last) VALUE (:id_user,:sid,:time_start,:time_last)
+Tue, 03 Jan 2017 10:18:25 +0300 : Ошибка в запросе: INSERT INTO sessions (id_user,sid,time_start,time_last) VALUE (:id_user,:sid,:time_start,:time_last)
+Tue, 03 Jan 2017 10:21:07 +0300 : Ошибка в запросе: INSERT INTO sessions (id_user,sid,time_start,time_last) VALUE (:id_user,:sid,:time_start,:time_last)
+Tue, 03 Jan 2017 10:21:55 +0300 : Ошибка в запросе: INSERT INTO sessions (id_user,sid,time_start,time_last) VALUE (:id_user,:sid,:time_start,:time_last)
+Tue, 03 Jan 2017 15:12:06 +0300 : Ошибка в запросе: SELECT * FROM sessions WHERE sid = :sid
+Tue, 03 Jan 2017 15:12:14 +0300 : Ошибка в запросе: SELECT * FROM sessions WHERE sid = :sid
+Wed, 04 Jan 2017 11:17:38 +0300 : Ошибка в запросе: INSERT INTO articles (title,content,id_user) VALUE (:title,:content,:id_user)
+Wed, 04 Jan 2017 11:27:13 +0300 : Ошибка в запросе: INSERT INTO articles (title,content,id_user) VALUE (:title,:content,:id_user)
+Wed, 04 Jan 2017 11:29:54 +0300 : Ошибка в запросе execute: INSERT INTO articles (title,content,id_user) VALUE (:title,:content,:id_user)
+Wed, 04 Jan 2017 11:30:34 +0300 : Ошибка в запросе execute: INSERT INTO articles (title,content,id_user) VALUE (:title,:content,:id_user)
+Wed, 04 Jan 2017 12:07:46 +0300 : Ошибка в запросе execute: INSERT INTO articles (title,content,id_user) VALUE (:title,:content,:id_user)
+Wed, 04 Jan 2017 12:11:00 +0300 : Ошибка в запросе execute: INSERT INTO articles (title,content,id_user) VALUE (:title,:content,:id_user)
+Wed, 04 Jan 2017 12:12:39 +0300 : Ошибка в запросе execute: INSERT INTO articles (title,content,id_user) VALUE (:title,:content,:id_user)
+Wed, 04 Jan 2017 12:13:17 +0300 : Ошибка в запросе execute: INSERT INTO articles (title,content,id_user) VALUE (:title,:content,:id_user)
+Wed, 04 Jan 2017 12:14:20 +0300 : Ошибка в запросе execute: INSERT INTO articles (title,content,id_user) VALUE (:title,:content,:id_user)
+Wed, 04 Jan 2017 14:03:54 +0300 : Ошибка в запросе query: SELECT tags.id, tags.name FROM articles_tags INNER JOIN tags ON (tags.id = articles_tags.id_tag) WHERE articles_tags.id_article = :id_article
+Wed, 04 Jan 2017 14:04:01 +0300 : Ошибка в запросе query: SELECT tags.id, tags.name FROM articles_tags INNER JOIN tags ON (tags.id = articles_tags.id_tag) WHERE articles_tags.id_article = :id_article
+Mon, 09 Jan 2017 11:35:53 +0300 : Ошибка в запросе execute: INSERT INTO pages (id_parent,alias,path,title,short_title,content,keywords,description,is_active) VALUE (:id_parent,:alias,:path,:title,:short_title,:content,:keywords,:description,:is_active)
+Mon, 09 Jan 2017 11:38:19 +0300 : Ошибка в запросе execute: INSERT INTO pages (id_parent,alias,path,title,short_title,content,keywords,description,is_active) VALUE (:id_parent,:alias,:path,:title,:short_title,:content,:keywords,:description,:is_active)
+Mon, 09 Jan 2017 11:40:51 +0300 : Ошибка в запросе execute: INSERT INTO pages (id_parent,alias,path,title,short_title,content,keywords,description,is_active) VALUE (:id_parent,:alias,:path,:title,:short_title,:content,:keywords,:description,:is_active)
+Mon, 09 Jan 2017 13:12:12 +0300 : Ошибка в запросе select: SELECT * FROM pages WHERE id_parent = 0"
+Mon, 09 Jan 2017 13:13:41 +0300 : Ошибка в запросе select: SELECT * FROM pages WHERE id_parent = 
+Tue, 10 Jan 2017 13:09:02 +0300 : Ошибка в запросе execute: INSERT INTO categories (id_parent,name) VALUE (:id_parent,:name)
+Tue, 10 Jan 2017 13:15:38 +0300 : Ошибка в запросе execute: INSERT INTO categories (id_parent,name) VALUE (:id_parent,:name)
+Tue, 10 Jan 2017 13:17:12 +0300 : Ошибка в запросе execute: INSERT INTO categories (id_parent,name) VALUE (:id_parent,:name)
+Tue, 10 Jan 2017 13:17:48 +0300 : Ошибка в запросе execute: INSERT INTO categories (id_parent,name,alias) VALUE (:id_parent,:name,:alias)
+Tue, 10 Jan 2017 13:17:56 +0300 : Ошибка в запросе execute: INSERT INTO categories (id_parent,name,alias) VALUE (:id_parent,:name,:alias)
+Tue, 10 Jan 2017 13:18:54 +0300 : Ошибка в запросе execute: INSERT INTO categories (id_parent,name,alias) VALUE (:id_parent,:name,:alias)
+Thu, 12 Jan 2017 09:53:17 +0300 : Ошибка в запросе select: SELECT * FROM categories WHERE id = :id_parent
+Thu, 12 Jan 2017 09:54:09 +0300 : Ошибка в запросе select: SELECT * FROM categories WHERE id = :id_parent
+Thu, 12 Jan 2017 11:20:39 +0300 : Ошибка в запросе query: SELECT * FROM pages WHERE id_parent = :id_category
+Thu, 12 Jan 2017 11:28:25 +0300 : Ошибка в запросе query: SELECT * FROM pages WHERE id_parent = :id_category
+Thu, 12 Jan 2017 11:29:36 +0300 : Ошибка в запросе query: SELECT * FROM pages WHERE id_parent = :id_category
+Thu, 12 Jan 2017 11:31:03 +0300 : Ошибка в запросе query: SELECT * FROM pages WHERE id_parent = :id_category
+Thu, 12 Jan 2017 14:31:29 +0300 : Запрашиваемая страница не найдена (Отсутствует контроллер: Application\Controllers\Editor1)
+Thu, 12 Jan 2017 14:41:39 +0300 : Запрашиваемая страница не найдена (Отсутствует контроллер: Application\Controllers\Editor1)
+Thu, 12 Jan 2017 14:46:57 +0300 : Запрашиваемая страница не найдена (Отсутствует контроллер: Application\Controllers\Editor1)
+Fri, 13 Jan 2017 11:20:45 +0300 : Ошибка в запросе select: SELECT * FROM 1 WHERE id_parent = :id_parent
+Fri, 13 Jan 2017 11:21:37 +0300 : Ошибка в запросе select: SELECT * FROM 1 WHERE id_parent = :id_parent
+Fri, 13 Jan 2017 11:22:03 +0300 : Ошибка в запросе select: SELECT * FROM 1 WHERE id_parent = :id_parent
+Fri, 13 Jan 2017 11:23:20 +0300 : Ошибка в запросе select: SELECT * FROM 1 WHERE id_parent = :id_parent
+Fri, 13 Jan 2017 12:22:57 +0300 : Ошибка в запросе select: SELECT * FROM pages
+Fri, 13 Jan 2017 12:45:21 +0300 : Ошибка в запросе execute: INSERT INTO menus (alias,name,is_active,arrItems) VALUE (:alias,:name,:is_active,:arrItems)
+Fri, 13 Jan 2017 12:59:29 +0300 : Ошибка в запросе execute: INSERT INTO menus (alias,name,is_active) VALUE (:alias,:name,:is_active)
+Fri, 13 Jan 2017 13:00:21 +0300 : Ошибка в запросе execute: INSERT INTO menu_items VALUES (:id_menu, :id_category, :id_page)
+Fri, 13 Jan 2017 13:03:58 +0300 : Ошибка в запросе execute: INSERT INTO menus (alias,name,is_active) VALUE (:alias,:name,:is_active)
+Fri, 13 Jan 2017 13:05:50 +0300 : Ошибка в запросе execute: INSERT INTO menus (name,alias,is_active) VALUE (:name,:alias,:is_active)
+Fri, 13 Jan 2017 13:06:27 +0300 : Ошибка в запросе execute: INSERT INTO menu_items VALUES (:id_menu, :id_category, :id_page)
+Fri, 13 Jan 2017 13:07:28 +0300 : Ошибка в запросе execute: INSERT INTO menus (name,alias,is_active) VALUE (:name,:alias,:is_active)
+Fri, 13 Jan 2017 13:08:44 +0300 : Ошибка в запросе execute: INSERT INTO menu_items VALUES (:id_menu, :id_category, :id_page)
+Fri, 13 Jan 2017 13:09:51 +0300 : Ошибка в запросе execute: INSERT INTO menu_items VALUES (:id_menu, :id_category, :id_page)
+Fri, 13 Jan 2017 13:11:58 +0300 : Ошибка в запросе execute: INSERT INTO menu_items VALUES (:id_menu, :id_category, :id_page)
+Fri, 13 Jan 2017 13:13:38 +0300 : Ошибка в запросе execute: INSERT INTO menu_items VALUES (:id_menu, :id_category, :id_page)
+Fri, 13 Jan 2017 13:14:48 +0300 : Ошибка в запросе execute: INSERT INTO menu_items VALUES (:id_menu, :id_category, :id_page)
+Fri, 13 Jan 2017 13:15:56 +0300 : Ошибка в запросе execute: INSERT INTO menu_items VALUES (:id_menu, :id_category, :id_page)
+Fri, 13 Jan 2017 13:18:07 +0300 : Ошибка в запросе execute: INSERT INTO menu_items (id_menu, id_category, id_page) VALUES (:id_menu, :id_category, :id_page)
+Fri, 13 Jan 2017 13:19:01 +0300 : Ошибка в запросе execute: INSERT INTO menu_items (id_menu, id_category, id_page) VALUES (:id_menu, :id_category, :id_page)
+Fri, 13 Jan 2017 15:13:00 +0300 : Ошибка в запросе execute: INSERT INTO menu_items (id_menu, id_category, id_page, name_item) VALUES (:id_menu, :id_category, :id_page, :name_item)
+Fri, 13 Jan 2017 15:14:14 +0300 : Ошибка в запросе execute: INSERT INTO menu_items (id_menu, id_category, id_page, name_item) VALUES (:id_menu, :id_category, :id_page, :name_item)
+Sat, 14 Jan 2017 13:37:02 +0300 : Ошибка в запросе execute: UPDATE menus SET name=:name,alias=:alias,is_active=:is_active,items=:items WHERE id = :id
+Sat, 14 Jan 2017 13:41:36 +0300 : Ошибка в запросе execute: DELETE FROM menu_items WHERE id = :id_menu
+Thu, 19 Jan 2017 10:00:01 +0300 : Ошибка в запросе execute: INSERT INTO menu_items (id_menu, id_category, id_page, name_item) VALUES (:id_menu, :id_category, :id_page, :name_item)
+Thu, 19 Jan 2017 10:02:40 +0300 : Ошибка в запросе execute: INSERT INTO menu_items (id_menu, id_category, id_page, name_item) VALUES (:id_menu, :id_category, :id_page, :name_item)
+Thu, 19 Jan 2017 10:08:39 +0300 : Ошибка в запросе execute: INSERT INTO menu_items (id_menu, id_category, id_page, name_item) VALUES (:id_menu, :id_category, :id_page, :name_item)
+Thu, 19 Jan 2017 10:10:01 +0300 : Ошибка в запросе execute: INSERT INTO menu_items (id_menu, id_category, id_page, name_item) VALUES (:id_menu, :id_category, :id_page, :name_item)
+Thu, 19 Jan 2017 10:10:48 +0300 : Ошибка в запросе execute: INSERT INTO menu_items (id_menu, id_category, id_page, name_item) VALUES (:id_menu, :id_category, :id_page, :name_item)
+Thu, 19 Jan 2017 10:12:27 +0300 : Ошибка в запросе execute: INSERT INTO menu_items (id_menu, id_category, id_page, name_item) VALUES (:id_menu, :id_category, :id_page, :name_item)
+Thu, 19 Jan 2017 10:13:42 +0300 : Ошибка в запросе execute: INSERT INTO menu_items (id_menu, id_category, id_page, name_item) VALUES (:id_menu, :id_category, :id_page, :name_item)
+Thu, 19 Jan 2017 10:14:44 +0300 : Ошибка в запросе execute: INSERT INTO menu_items (id_menu, id_category, id_page, name_item) VALUES (:id_menu, :id_category, :id_page, :name_item)
+Thu, 19 Jan 2017 10:15:40 +0300 : Ошибка в запросе execute: INSERT INTO menu_items (id_menu, id_category, id_page, name_item) VALUES (:id_menu, :id_category, :id_page, :name_item)
+Thu, 19 Jan 2017 10:16:15 +0300 : Ошибка в запросе execute: INSERT INTO menu_items (id_menu, id_category, id_page, name_item) VALUES (:id_menu, :id_category, :id_page, :name_item)
+Thu, 19 Jan 2017 10:17:01 +0300 : Ошибка в запросе execute: INSERT INTO menu_items (id_menu, id_category, id_page, name_item) VALUES (:id_menu, :id_category, :id_page, :name_item)
+Thu, 19 Jan 2017 10:18:04 +0300 : Ошибка в запросе execute: INSERT INTO menu_items (id_menu, id_category, id_page, name_item) VALUES (:id_menu, :id_category, :id_page, :name_item)
+Thu, 19 Jan 2017 10:22:25 +0300 : Ошибка в запросе execute: INSERT INTO menu_items (id_menu, id_category, id_page, name_item) VALUES (:id_menu, :id_category, :id_page, :name_item)
+Thu, 19 Jan 2017 10:24:59 +0300 : Ошибка в запросе execute: INSERT INTO menu_items (id_menu, id_category, id_page, name_item) VALUES (:id_menu, :id_category, :id_page, :name_item)
+Thu, 19 Jan 2017 10:27:06 +0300 : Ошибка в запросе execute: INSERT INTO menu_items (id_menu, id_category, id_page, name_item) VALUES (:id_menu, :id_category, :id_page, :name_item)
+Thu, 19 Jan 2017 10:57:43 +0300 : Ошибка в запросе execute: INSERT INTO menu_items (id_menu, id_category, id_page, name_item) VALUES (:id_menu, :id_category, :id_page, :name_item)
+Thu, 19 Jan 2017 11:13:09 +0300 : Ошибка в запросе select: SELECT * FROM  WHERE id_parent = :id_parent
+Thu, 19 Jan 2017 12:23:47 +0300 : Ошибка в запросе execute: INSERT INTO menu_items (id_menu, id_category, id_page, name_item) VALUES (:id_menu, :id_category, :id_page, :name_item)
+Mon, 23 Jan 2017 10:21:38 +0300 : Ошибка в запросе execute: INSERT INTO images (name,title,alt) VALUE (:name,:title,:alt)
+Mon, 23 Jan 2017 10:29:42 +0300 : Ошибка в запросе execute: INSERT INTO images (name,title,alt) VALUE (:name,:title,:alt)
+Mon, 23 Jan 2017 10:55:21 +0300 : Ошибка в запросе query: SELECT * FROM imagesWHERE id_gallery = :id_gallery
+Thu, 26 Jan 2017 09:12:52 +0300 : Запрашиваемая страница не найдена (Отсутствует контроллер: Application\Controllers\Editor1)
+Thu, 26 Jan 2017 09:32:27 +0300 : Запрашиваемая страница не найдена (Отсутствует контроллер: Application\Controllers\Editor1)
+Thu, 26 Jan 2017 09:34:00 +0300 : Запрашиваемая страница не найдена (Отсутствует контроллер: Application\Controllers\Ckeditor)
+Thu, 26 Jan 2017 09:39:22 +0300 : Запрашиваемая страница не найдена (Отсутствует контроллер: Application\Controllers\Ckeditor1)
+Thu, 26 Jan 2017 09:40:01 +0300 : Запрашиваемая страница не найдена (Отсутствует контроллер: Application\Controllers\Ckeditor1)
+Thu, 26 Jan 2017 10:18:07 +0300 : Запрашиваемая страница не найдена (Отсутствует контроллер: Application\Controllers\Open)
+Thu, 26 Jan 2017 10:19:35 +0300 : Запрашиваемая страница не найдена (Отсутствует контроллер: Application\Controllers\Open)
+Thu, 26 Jan 2017 10:23:34 +0300 : Запрашиваемая страница не найдена (Отсутствует контроллер: Application\Controllers\Open)
+Thu, 26 Jan 2017 10:47:24 +0300 : Запрашиваемая страница не найдена (Отсутствует метод контроллера: action)
+Thu, 26 Jan 2017 13:12:29 +0300 : Запрашиваемая страница не найдена (Отсутствует контроллер: )
+Sat, 28 Jan 2017 11:36:09 +0300 : Ошибка в запросе query: SELECT * FROM pages WHERE content LIKE CONCAT(‘%’,:like,’%’)
+Sat, 28 Jan 2017 11:37:02 +0300 : Ошибка в запросе query: SELECT * FROM pages WHERE content LIKE CONCAT(‘%’,:like,’%’)
+Sat, 28 Jan 2017 11:37:05 +0300 : Ошибка в запросе query: SELECT * FROM pages WHERE content LIKE CONCAT(‘%’,:like,’%’)
+Sat, 28 Jan 2017 11:49:34 +0300 : Ошибка в запросе query: SELECT * FROM pages WHERE content LIKE $like
+Sat, 28 Jan 2017 11:49:56 +0300 : Ошибка в запросе query: SELECT * FROM pages WHERE content LIKE %плохим%
+Sat, 28 Jan 2017 11:50:27 +0300 : Ошибка в запросе query: SELECT * FROM pages WHERE content LIKE `%плохим%`
+Sat, 28 Jan 2017 11:59:26 +0300 : Ошибка в запросе select: SELECT * FROM menu_items WHERE id_menu = :id_menu
+Sat, 28 Jan 2017 11:59:30 +0300 : Ошибка в запросе select: SELECT * FROM menu_items WHERE id_menu = :id_menu
+Sat, 28 Jan 2017 12:22:58 +0300 : Запрашиваемая страница не найдена (Отсутствует контроллер: )
+Sat, 28 Jan 2017 12:24:54 +0300 : Запрашиваемая страница не найдена (Отсутствует контроллер: )
+Sat, 28 Jan 2017 12:25:23 +0300 : Запрашиваемая страница не найдена (Отсутствует контроллер: )
+Sat, 28 Jan 2017 12:25:35 +0300 : Запрашиваемая страница не найдена (Отсутствует контроллер: )
+Sat, 28 Jan 2017 12:28:47 +0300 : Запрашиваемая страница не найдена (Отсутствует контроллер: )
+Sat, 28 Jan 2017 12:31:33 +0300 : Запрашиваемая страница не найдена (Отсутствует контроллер: )
+Sat, 28 Jan 2017 12:32:15 +0300 : Запрашиваемая страница не найдена (Отсутствует контроллер: )
+Sat, 28 Jan 2017 12:33:20 +0300 : Запрашиваемая страница не найдена (Отсутствует контроллер: )
+Sat, 28 Jan 2017 12:37:16 +0300 : Запрашиваемая страница не найдена (Отсутствует контроллер: )
+Sat, 28 Jan 2017 12:39:49 +0300 : Запрашиваемая страница не найдена (Отсутствует контроллер: )
+Sat, 28 Jan 2017 12:40:49 +0300 : Запрашиваемая страница не найдена (Отсутствует контроллер: )
+Sat, 28 Jan 2017 12:41:02 +0300 : Запрашиваемая страница не найдена (Отсутствует контроллер: )
+Sat, 28 Jan 2017 12:41:26 +0300 : Запрашиваемая страница не найдена (Отсутствует контроллер: )
+Sat, 28 Jan 2017 12:44:15 +0300 : Запрашиваемая страница не найдена (Отсутствует контроллер: )
+Sat, 28 Jan 2017 12:44:58 +0300 : Запрашиваемая страница не найдена (Отсутствует контроллер: )
+Sat, 28 Jan 2017 12:45:03 +0300 : Запрашиваемая страница не найдена (Отсутствует контроллер: )
+Mon, 30 Jan 2017 09:10:33 +0300 : Ошибка в запросе query: SELECT * FROM pages WHERE is_main = `1`
+Mon, 30 Jan 2017 09:10:34 +0300 : Ошибка в запросе query: SELECT * FROM pages WHERE is_main = `1`
+Mon, 30 Jan 2017 09:35:51 +0300 : Ошибка в запросе query: SELECT * FROM pages LIMIT $current_page, $max WHERE is_main = "1"
+Mon, 30 Jan 2017 09:35:52 +0300 : Ошибка в запросе query: SELECT * FROM pages LIMIT $current_page, $max WHERE is_main = "1"
+Mon, 30 Jan 2017 09:36:47 +0300 : Ошибка в запросе query: SELECT * FROM pages LIMIT 0,5 WHERE is_main = "1"
+Mon, 30 Jan 2017 09:36:48 +0300 : Ошибка в запросе query: SELECT * FROM pages LIMIT 0,5 WHERE is_main = "1"
+Mon, 30 Jan 2017 09:37:13 +0300 : Ошибка в запросе query: SELECT * FROM pages LIMIT 0, 5 WHERE is_main = "1"
+Mon, 30 Jan 2017 09:37:14 +0300 : Ошибка в запросе query: SELECT * FROM pages LIMIT 0, 5 WHERE is_main = "1"
+Wed, 29 Mar 2017 16:29:00 +0300 : Ошибка в запросе query: SELECT * FROM pages WHERE id = :id
+Wed, 29 Mar 2017 16:29:02 +0300 : Ошибка в запросе query: SELECT * FROM pages WHERE is_main = "1" AND is_active = "1" ORDER BY id
+Wed, 29 Mar 2017 16:35:08 +0300 : Ошибка в запросе select: SELECT * FROM categories WHERE id_parent = :id_parent
+Wed, 29 Mar 2017 16:36:13 +0300 : Ошибка в запросе select: SELECT * FROM categories WHERE id_parent = :id_parent
+Wed, 29 Mar 2017 16:38:04 +0300 : Ошибка в запросе select: SELECT * FROM categories WHERE id_parent = :id_parent
+Wed, 29 Mar 2017 16:38:11 +0300 : Ошибка в запросе select: SELECT * FROM categories WHERE id_parent = :id_parent
+Wed, 29 Mar 2017 16:45:06 +0300 : Ошибка в запросе select: SELECT * FROM categories WHERE id_parent = :id_parent
+Wed, 29 Mar 2017 16:47:09 +0300 : Ошибка в запросе select: SELECT * FROM categories WHERE id_parent = :id_parent
+Wed, 29 Mar 2017 16:49:44 +0300 : Ошибка в запросе select: SELECT * FROM categories WHERE id_parent = :id_parent
+Wed, 29 Mar 2017 16:51:51 +0300 : Ошибка в запросе select: SELECT * FROM categories WHERE id_parent = :id_parent
+Thu, 30 Mar 2017 12:41:06 +0300 : Ошибка в запросе select: SELECT * FROM blog_menu_items WHERE id_menu = :id_menu ORDER BY id_menu :sort
+Thu, 30 Mar 2017 12:41:07 +0300 : Ошибка в запросе select: SELECT * FROM blog_menu_items WHERE id_menu = :id_menu ORDER BY id_menu :sort
+Thu, 30 Mar 2017 14:44:17 +0300 : Ошибка в запросе select: SELECT * FROM blog_pages ORDER BY id :sort
+Thu, 30 Mar 2017 14:50:07 +0300 : Ошибка в запросе query: SELECT * FROM blog_pagesORDER BY id DESC
+Thu, 30 Mar 2017 14:55:57 +0300 : Ошибка в запросе query: SELECT * FROM blog_categories WHERE id = :id
+Thu, 30 Mar 2017 15:05:11 +0300 : Ошибка в запросе query: SELECT * FROM blog_pages ORDER BY id DESC WHERE id_parent = :id_category

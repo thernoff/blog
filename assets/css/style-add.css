@@ -1,0 +1,122 @@
+.autorize {
+  color: #b9b9b9;
+  font-size: 1em;
+  width: 200px;
+  border: 1px solid #e1e0e0;
+  padding: 15px 20px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+h2.autorize {
+  width: auto;
+  text-align: center;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #4f4e4e;
+}
+
+.menu-item{
+    position: relative;
+    background-color: #d0edd4;
+}
+.delete-item{
+    position: absolute;
+    top: 3px;
+    right: 3px;
+}
+.btn-delete-item{
+    border-radius: 50%;
+    background-color: #eacece;
+}
+
+.border{
+    border: 1px solid #e1e0e0;
+    border-radius: 5px;
+}
+
+.admin{
+    padding-left: 10px;
+}
+
+.admin ul{
+    padding: 10px;
+}
+
+.admin ul li{
+    
+}
+
+.admin ul li span{
+    margin: 5px;
+}
+
+.admin a{
+    text-decoration: none;
+}
+
+.admin-form{
+	
+}
+
+.admin div{
+    margin: 10px 5px;
+}
+
+.admin div .btn-remove{
+    float: right;
+    background-color: #eacece;
+}
+
+.admin-articles-table{
+	
+}
+
+
+
+.admin-articles-table a{
+    text-decoration: none;
+}
+
+.admin-articles-table {
+width: 100%;
+font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+font-size: 14px;
+border-collapse: collapse;
+
+border-style: solid;
+border-width: 1px;
+border-color: #989b9e;
+}
+.admin-articles-table th, .admin-articles-table th:first-child {
+background: #989b9e;
+color: white;
+padding: 10px 20px;
+text-align: center;
+}
+.admin-articles-table th, .admin-articles-table td {
+border-style: solid;
+border-width: 0 1px 1px 0;
+border-color: #989b9e;
+vertical-align: middle;
+}
+.admin-articles-table td {
+background: #fff;
+padding-left: 3px;
+padding-right: 3px;
+}
+
+.admin input[type="text"]{
+ width: 400px;
+}
+
+.image-preview{
+    float: left;
+}
+
+.image-preview img{
+    width: 200px;
+    height: 150px;
+}
