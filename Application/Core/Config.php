@@ -9,7 +9,6 @@ class Config
 	
 	protected function __construct()
 	{
-		//$this->data = require('../config/config.php');
 		$this->data = require __DIR__.'/../config/config.php';
 	}
 	

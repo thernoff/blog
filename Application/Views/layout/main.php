@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="assets/css/style-add.css" />
 <link rel="stylesheet" type="text/css" href="assets/css/gallery.css" />
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-<title>Company name - home page</title>
+<title>Блог туриста</title>
 </head>
 
 <body>

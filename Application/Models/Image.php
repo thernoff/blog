@@ -2,8 +2,6 @@
 
 namespace Application\Models;
 
-use Application\Model;
-use Application\Db;
 use Application\Core\MultiException;
 
 class Image
@@ -22,23 +20,28 @@ class Image
         return $gallery->alias;
     }
     
-    public function load($tmp, $path) {
+    public function load($tmp, $path)
+    {
         $ext = $this->getExt($this->name);
         $this->name = $this->getUniqueName($this->name) . "." . $ext;
+        
         if (!file_exists($path)){
             mkdir($path);
         }
+        
         move_uploaded_file($tmp, $path . $this->name);
     }
     
-    public function loadAndSave($tmp, $path) {
+    public function loadAndSave($tmp, $path)
+    {
         $ext = $this->getExt($this->name);
         $this->name = $this->getUniqueName($this->name) . "." . $ext;
+        
         if (!file_exists($path)){
             mkdir($path);
         }
+        
         move_uploaded_file($tmp, $path . $this->name);
-        //die();
         parent::save();
     }
     
@@ -51,15 +54,18 @@ class Image
     {
         $name = substr(md5($name),0,6);
         $name .= time();
+        
         return $name;
     }
     
     public static function getImagesByGallery($id_gallery){
         $images = static::findByWhere("WHERE id_gallery = :id_gallery", [':id_gallery' => $id_gallery]);
+        
         return $images;
     }
     
-    public function createThumbnail($pathToImage, $pathToThumb, $image, $width_thumb, $height_thumb) {
+    public function createThumbnail($pathToImage, $pathToThumb, $image, $width_thumb, $height_thumb)
+    {
         $info = getimagesize($pathToImage . $image); //получаем размеры картинки и ее тип
         $size = array($info[0], $info[1]); //закидываем размеры в массив
         
@@ -85,11 +91,10 @@ class Image
         imagecopyresampled($thumb, $src, 0, 0, $new_x, $new_y, $width_thumb, $height_thumb, $new_width, $new_height);
         
         if (!file_exists($pathToThumb)){
-            //echo $pathToThumb . "<br>";
             mkdir($pathToThumb);
         }
-        //Копирование и изменение размера изображения с ресемплированием
         
+        //Копирование и изменение размера изображения с ресемплированием
         $path = $pathToThumb . $image;
         
         if ($info['mime'] == 'image/png') {

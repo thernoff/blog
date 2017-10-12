@@ -36,7 +36,7 @@ class User
             return false;
         }
         
-        //Запоминаем имя и md5(пароль)
+        //Запоминаем имя и md5(пароль) в куки
         if ($remember){
             $expire = time() +3600 * 24 * 100;
             setcookie('login', $login, $expire);
@@ -53,13 +53,14 @@ class User
 	{
             setcookie('login', '', time() - 1);
             setcookie('password', '', time() - 1);
+            
             unset($_COOKIE['login']);
             unset($_COOKIE['password']);
+            
             Session::deleteSessionFromDataBase();
             Session::unsetSession('sid');
+            
             header("Location: /index.php?controller=main&action=autorize");
-            //$this->sid = null;
-            //$this->uid = null;
 	}
     
     /*
@@ -69,10 +70,8 @@ class User
     {
         $db = Db::instance();
         $sql = "SELECT * FROM " . self::TABLE . " WHERE login = :login";
-        //echo $sql."<br>";
-        //echo $login."<br>";
         $res = $db->query($sql, self::class, [':login' => $login]);
-        //var_dump($res);
+
         //В случае успеха возвращаем объект класса User
 	return ($res) ? $res[0] : null;
     }    
@@ -86,11 +85,9 @@ class User
         //Если id_user не указан, берем его из текущей сессии
         if ($id_user == null){
             $id_user = $this->getIdUser();
-            //echo 'User::getUser: id_user = '.$id_user."<br>";
         }
         
         if ($id_user == null){
-            //echo 'Пользователь отсутствует '."<br>";
             return $this;
         }
         
@@ -106,25 +103,23 @@ class User
     public function getIdUser()
     {
         $sid = $this->getSID();
-        //echo 'Получаем из getIdUser в самом начале $sid = $this->getSID(), sid = ' . $sid."<br><br>";
         
         if ($sid == null){
             return null;
         }
         
         $sql = "SELECT * FROM blog_sessions WHERE sid = :sid";
-        //$res = $db->query($sql, self::class, [':sid' => $sid]);
         $res = Session::findBySID($sid);
+        
         //Если сессию не нашли, значит пользователь не авторизован
         if (count($res) == 0){  
             //echo 'count($res) = ' . 0 . "<br>";
             return null;
         }
-        //echo "<hr>";
-        //var_dump($res);
-        //echo "<hr>";
+
         //Если сессия найдена, запоминаем ее.
-        $this->id_user = $res[0]->id_user;        
+        $this->id_user = $res[0]->id_user;
+        
         return $this->id_user;
     }
     
@@ -135,13 +130,13 @@ class User
     {
         //Ищем SID
         $sid = Session::getSessionData('sid');
+        
         //Если нашли, попробуем обновить time_last в базе данных.
         if ($sid !==null){
             if ($session = Session::findById($sid)){
                 $session->time_last = date('Y-m-d H:i:s');
                 $session->save();
             }
-            
         }
         
         //Если sid отсутствует, проверяем куки и переавторизовываем пользователя заново
@@ -152,9 +147,7 @@ class User
                 $sid = $this->openSession($user->id);
             }
         }
-        //echo 'SID : '.$sid."<br>";
-        //Возвращаем sid
-        //echo 'SID (getSID): '.$sid."<br>";
+        
         return $sid;
     }
    

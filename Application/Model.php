@@ -7,13 +7,15 @@ use Application\Db;
 abstract class Model
 {
     const TABLE = '';
-
-    public $id;//Принимаем соглашение: в каждой таблицы БД есть поле id с первичным ключом
+    
+    //Принимаем соглашение: в каждой таблицы БД есть поле id с первичным ключом
+    public $id;
     
     public static function findAll()
     {
         $db = Db::instance();
         $res = $db->query('SELECT * FROM ' . static::TABLE, static::class);
+        
         return $res;
     }
     
@@ -81,7 +83,8 @@ abstract class Model
     {
         if (!$this->isNew())
         {
-            return;//Если объект не является только что созданным, то выходим из метода insert()
+            //Если объект не является только что созданным, то выходим из метода insert()
+            return;
         }
 
         $columns = [];
@@ -95,8 +98,6 @@ abstract class Model
             $values[':'.$key] = $value;
             //$values[':'.$key] = htmlspecialchars($value);
         }
-
-        //var_dump($columns);
 
         $sql = 'INSERT INTO ' . static::TABLE . ' ('. implode(',', $columns) .') VALUE (' . implode(',', array_keys($values)) . ')';
         $db = Db::instance();
@@ -145,7 +146,6 @@ abstract class Model
         }
 
         $sql = 'DELETE FROM ' . static::TABLE . ' WHERE id = :id';
-        //echo $sql;
         $values[':id'] = $this->id;
         $db = Db::instance();
         $db->execute($sql, $values);
@@ -156,11 +156,9 @@ abstract class Model
         foreach ($arr as $key => $value){
             
             if (property_exists(static::class, $key)){
-                //echo $key . " => " . $value . "<br>";
                 //$this->$key = htmlspecialchars($value);
                 $this->$key = $value;
             }
-            //echo $key . " => " . $value . "<br>";
         }
     }
     
@@ -186,6 +184,7 @@ abstract class Model
         }
         
         $arrVars = get_object_vars($this);
+        
         if (array_key_exists('id', $arrVars) && array_key_exists('id_parent', $arrVars)){
             return $this->makeTree($table, $level);
         }else{
@@ -207,5 +206,4 @@ abstract class Model
         }            
         return $map;
     }    
-
 }

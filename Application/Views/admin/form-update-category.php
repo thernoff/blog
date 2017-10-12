@@ -1,8 +1,4 @@
 <?php
-//echo "<pre>";
-//var_dump($this->map);
-//var_dump($this->category);
-//echo "</pre>";
 function print_tree($map, $id_parent, $id, $shift = 0)
 {
     if(!empty($map))

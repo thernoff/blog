@@ -14,11 +14,7 @@
         }
     }
 ?>
-<?php
-    //echo "<pre>";
-    //var_dump($this->map);
-    //echo "</pre>";
-?>
+
 <?php if(count($this->errors)>0): ?>
 <div class="error">
     <?php foreach ($this->errors as $error): ?>

@@ -176,3 +176,5 @@ Thu, 30 Mar 2017 14:44:17 +0300 : Ошибка в запросе select: SELECT 
 Thu, 30 Mar 2017 14:50:07 +0300 : Ошибка в запросе query: SELECT * FROM blog_pagesORDER BY id DESC
 Thu, 30 Mar 2017 14:55:57 +0300 : Ошибка в запросе query: SELECT * FROM blog_categories WHERE id = :id
 Thu, 30 Mar 2017 15:05:11 +0300 : Ошибка в запросе query: SELECT * FROM blog_pages ORDER BY id DESC WHERE id_parent = :id_category
+Thu, 12 Oct 2017 13:32:36 +0300 : Ошибка в запросе execute: INSERT INTO blog_sessions (id_user,sid,time_start,time_last) VALUE (:id_user,:sid,:time_start,:time_last)
+Thu, 12 Oct 2017 13:33:50 +0300 : Ошибка в запросе execute: INSERT INTO blog_sessions (id_user,sid,time_start,time_last) VALUE (:id_user,:sid,:time_start,:time_last)

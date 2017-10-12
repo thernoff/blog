@@ -8,7 +8,7 @@
 <link rel="stylesheet" type="text/css" href="assets/css/style-add.css" />
 <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 <script src="assets/ckeditor/ckeditor.js"></script>
-<title>Company name - home page</title>
+<title>Блог туриста: управление сайтом</title>
 </head>
 
 <body>

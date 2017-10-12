@@ -64,6 +64,7 @@ class View
                 $$key = $value;
             }
         }
+        
         ob_start();
 
         foreach ($this->data as $property => $value){

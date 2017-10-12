@@ -37,18 +37,12 @@ class Session
     {
         unset($_SESSION[$key]);
     }
-
-
-    /*
-     * 
-     */
     
     public static function findBySID($sid){
         $db = Db::instance();
         $res = $db->query('SELECT * FROM ' . static::TABLE . ' WHERE sid = :sid', static::class, [':sid' => $sid]);        
         return $res;
     }
-
 
     /*
     * Очистка неиспользуемых сессий
@@ -69,6 +63,7 @@ class Session
     {
         //Ищем SID
         $sid = Session::getSessionData('sid');
+        
         //Если нашли, попробуем обновить time_last в базе данных.
         if ($sid !==null){
             $sql = 'DELETE FROM ' . static::TABLE . ' WHERE sid = :sid';

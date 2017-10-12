@@ -32,6 +32,7 @@ class Main
         $this->view->linkPrev = "/index.php?controller=" . $this->controllerName . "&action=" . $this->actionName . "&page=" . $prev;
         $this->view->linkNext = "/index.php?controller=" . $this->controllerName . "&action=" . $this->actionName . "&page=" . $next;
         $this->view->pagination = $pagination;
+        
         echo $this->view->render(__DIR__ . '/../Views/layout/main.php', __DIR__ . '/../Views/main/index.php');
     }
     
@@ -95,6 +96,7 @@ class Main
         $this->view->title = "Фотогалереи";
         $galleries = \Application\Models\Gallery::findAllIsActive();
         $this->view->galleries = $galleries;
+        
         echo $this->view->render(__DIR__ . '/../Views/layout/main.php', __DIR__ . '/../Views/main/gallery.php');
     }
     
@@ -131,25 +133,22 @@ class Main
                 }
             }else{
                 $this->view->error = "Не верно введены логин или пароль.";
+                
                 echo $this->view->render(__DIR__ . '/../Views/layout/main.php', __DIR__ . '/../Views/main/autorize.php');
             }
         }else{
-            //$dataUser = $user->getUser();            
-            //echo $this->view->render(__DIR__ . '/../Views/layout/main.php', __DIR__ . '/../Views/main/autorize.php', ['user' => $dataUser]);
             $this->view->user = $user->getUser();
+            
             echo $this->view->render(__DIR__ . '/../Views/layout/main.php', __DIR__ . '/../Views/main/autorize.php');
         }
-        
-        
     }
     
     protected function actionSearch(){
         $this->view->title = "Результаты поиска";
+        
         if (!empty($_POST['search'])){
-            //var_dump($_POST);
             $search = htmlspecialchars($_POST['search']);
             $pages = \Application\Models\Page::search('content', $search);
-            //var_dump($pages);
             $this->view->pages = $pages;
             echo $this->view->render(__DIR__ . '/../Views/layout/main.php', __DIR__ . '/../Views/main/search.php');
         }else{
@@ -168,6 +167,4 @@ class Main
         $user = User::instance();
         $user->logout();
     }
-    
-    
 }

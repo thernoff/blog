@@ -21,13 +21,13 @@ class Gallery
         $db = Db::instance();
         $sql = "SELECT * FROM blog_images WHERE id_gallery = :id_gallery ORDER BY id";
         $images = $db->select($sql, [":id_gallery" => $this->id]);
+        
         return $images[0];
     }
     
     public function fillFromArray($arr)
     {		
-        parent::fillFromArray($arr);
-        
+        parent::fillFromArray($arr);        
         $this->is_active = (!isset($arr['is_active']) ? 0 : 1);
     }
 }

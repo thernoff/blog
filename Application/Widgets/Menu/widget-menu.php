@@ -9,7 +9,6 @@
         }else{
             return "<li><a href='index.php?controller=main'>" . $item['name_item'] . "</a></li>";
         }
-        
     }
 ?>
 <ul>

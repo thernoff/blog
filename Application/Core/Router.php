@@ -16,20 +16,22 @@ class Router
     
     public function run(){
         $uri = $this->getURI();
+        
         if (strpos($uri, '?')){
             $pos = strpos($uri, '?');
             $str = substr($uri, $pos+1);
             $arr = [];
+            
             //Получаем массив с переданными параметрами,
             //причем: первый параметр - Controller, второй параметр - Action
             $arr = explode('&', $str);
+            
             if (strpos($arr[0], '=')){
                 $arrCntr = explode('=', $arr[0]);
                 if ($arrCntr[0] == "controller"){
                     $controller = 'Application\\Controllers\\'.ucfirst($arrCntr[1]);
                     $controllerName = $arrCntr[1];
                 }
-                //var_dump($controller);
             }
 
             if (strpos($arr[1], '=')){
@@ -54,7 +56,6 @@ class Router
                 else{
                     throw $e2 = new \Application\Exceptions\Error404('Запрашиваемая страница не найдена (Отсутствует метод контроллера: action' . $action . ')');
                 }
-
             } catch (\Application\Exceptions\Error404 $e1){
                 $error = $e1->getMessage();
             } catch(\Application\Exceptions\Core $e){
@@ -66,7 +67,6 @@ class Router
             }finally {
                 require 'Application/templates/error.php';
             }
-            
         }else {
             $controller = new \Application\Controllers\Main('main');
             $action = 'Index';
