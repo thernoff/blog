@@ -1,4 +1,4 @@
-<h2><?=$this->title;?></h2>
+<h2><?= $this->title; ?></h2>
 <form class="admin" enctype="multipart/form-data" method="post">
     <div>
         <input type="button" id="btnAdd" value="Добавить фотографию"/>

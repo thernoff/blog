@@ -1,1 +1,1 @@
-<h2><?=$user->login;?></h2>
+<h2><?= $user->login; ?></h2>

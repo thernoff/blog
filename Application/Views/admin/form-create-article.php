@@ -1,4 +1,4 @@
-<h2><?=$this->title;?></h2>
+<h2><?= $this->title; ?></h2>
 <form class="admin" action="" method="post">
     <label for="title">Название статьи: </label><input type="text" name="title" value=""><br>
     <textarea name="content" id="editor1" rows="5" cols="80">
@@ -11,18 +11,18 @@
         // thisConfig.dialog_noConfirmCancel = true;
         // Replace the <textarea id="editor1"> with a CKEditor
         // instance, using default configuration.
-        CKEDITOR.replace( 'editor1', {
-            filebrowserBrowseUrl : '/web/assets/elfinder/elfinder.html', // eg. 'includes/elFinder/elfinder.html'
-            toolbar : 'Basic',
+        CKEDITOR.replace('editor1', {
+            filebrowserBrowseUrl: '/web/assets/elfinder/elfinder.html', // eg. 'includes/elFinder/elfinder.html'
+            toolbar: 'Basic',
             //uiColor : '#9AB8F3'
-        } );
+        });
     </script>
     <br>
     <h3>Укажите теги</h3>
     <p>
         <?php foreach ($allTags as $tag): ?>
-        <input type="checkbox" name = tags[] value="<?= $tag->id?>"><?= $tag->name?>
-        <?php endforeach;?>
+            <input type="checkbox" name = tags[] value="<?= $tag->id ?>"><?= $tag->name ?>
+        <?php endforeach; ?>
     </p>
     <br>
     <input type="submit" name="submitCreate" value="Сохранить">

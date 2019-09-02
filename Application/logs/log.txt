@@ -178,3 +178,10 @@ Thu, 30 Mar 2017 14:55:57 +0300 : Ошибка в запросе query: SELECT *
 Thu, 30 Mar 2017 15:05:11 +0300 : Ошибка в запросе query: SELECT * FROM blog_pages ORDER BY id DESC WHERE id_parent = :id_category
 Thu, 12 Oct 2017 13:32:36 +0300 : Ошибка в запросе execute: INSERT INTO blog_sessions (id_user,sid,time_start,time_last) VALUE (:id_user,:sid,:time_start,:time_last)
 Thu, 12 Oct 2017 13:33:50 +0300 : Ошибка в запросе execute: INSERT INTO blog_sessions (id_user,sid,time_start,time_last) VALUE (:id_user,:sid,:time_start,:time_last)
+Mon, 02 Sep 2019 11:22:17 +0300 : Возникла проблема при подключении к базе данных. Ошибка: SQLSTATE[HY000] [1049] Unknown database 'blog'
+Mon, 02 Sep 2019 11:23:27 +0300 : Возникла проблема при подключении к базе данных<br/>. Ошибка: SQLSTATE[HY000] [1049] Unknown database 'blog'
+Mon, 02 Sep 2019 11:23:33 +0300 : Возникла проблема при подключении к базе данных<br/>. Ошибка: SQLSTATE[HY000] [1049] Unknown database 'blog'
+Mon, 02 Sep 2019 11:23:35 +0300 : Возникла проблема при подключении к базе данных<br/>. Ошибка: SQLSTATE[HY000] [1049] Unknown database 'blog'
+Mon, 02 Sep 2019 11:23:46 +0300 : Возникла проблема при подключении к базе данных. Ошибка: SQLSTATE[HY000] [1049] Unknown database 'blog'
+Mon, 02 Sep 2019 11:24:12 +0300 : Возникла проблема при подключении к базе данных. 
+Mon, 02 Sep 2019 11:24:34 +0300 : SQLSTATE[HY000] [1049] Unknown database 'blog'
