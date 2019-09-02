@@ -8,7 +8,6 @@ class Logger {
 
     protected static $logger = null;
     protected static $pathLogs = '';
-    protected static $log;
 
     public function __construct() {
         if (null !== self::$logger) {
@@ -16,15 +15,14 @@ class Logger {
         }
 
         $config = Config::instance()->data;
-        $dirLog = $config['settings_logs']['dir_log'];
-        $fileLog = $config['settings_logs']['file_log'];
+        $dirLog = (isset($config['settings_logs']['dir_log'])) ? $config['settings_logs']['dir_log'] : 'logs';
+        $fileLog = (isset($config['settings_logs']['file_log'])) ? $config['settings_logs']['file_log'] : 'log.txt';
 
         if (!@is_dir($dirLog)) {
-            mkdir($dirLog, 0770, true);
+            mkdir($dirLog, 0755, true);
         }
 
         self::$pathLogs = $dirLog . "/" . $fileLog;
-        self::$log = fopen(self::$pathLogs, 'a');
     }
 
     public static function addError($error) {
