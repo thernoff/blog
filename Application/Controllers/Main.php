@@ -11,6 +11,12 @@ use Application\Models\Session;
 use Application\Core\Config;
 
 class Main extends Controller {
+    
+    public function __construct($controllerName) {
+        parent::__construct($controllerName);
+        $this->layoutPath = __DIR__ . '/../Views/layout/';
+        $this->viewPath = __DIR__ . '/../Views/main/';
+    }
 
     protected function actionIndex() {
         $config = Config::instance()->data;
@@ -30,7 +36,7 @@ class Main extends Controller {
         $this->view->linkNext = "/index.php?controller=" . $this->controllerName . "&action=" . $this->actionName . "&page=" . $next;
         $this->view->pagination = $pagination;
 
-        echo $this->view->render(__DIR__ . '/../Views/layout/main.php', __DIR__ . '/../Views/main/index.php');
+        echo $this->view->render($this->layoutPath . 'main.php', $this->viewPath . 'index.php');
     }
 
     protected function actionArticle() {
@@ -38,7 +44,7 @@ class Main extends Controller {
             $id_article = (int) $_GET['id'];
             if ($article = \Application\Models\Article::findById($id_article)) {
                 $this->view->article = $article;
-                echo $this->view->render(__DIR__ . '/../Views/layout/main.php', __DIR__ . '/../Views/main/article.php');
+                echo $this->view->render($this->layoutPath . 'main.php', $this->viewPath . 'article.php');
             } else {
                 $this->actionError404();
             }
@@ -52,7 +58,7 @@ class Main extends Controller {
             $id_page = (int) $_GET['id'];
             if ($page = \Application\Models\Page::findById($id_page)) {
                 $this->view->page = $page;
-                echo $this->view->render(__DIR__ . '/../Views/layout/main.php', __DIR__ . '/../Views/main/page.php');
+                echo $this->view->render($this->layoutPath . 'main.php', $this->viewPath . 'page.php');
             } else {
                 $this->actionError404();
             }
@@ -76,7 +82,7 @@ class Main extends Controller {
                 $this->view->linkPrev = "/index.php?controller=" . $this->controllerName . "&action=" . $this->actionName . "&id=" . $id_category . "&page=" . $prev;
                 $this->view->linkNext = "/index.php?controller=" . $this->controllerName . "&action=" . $this->actionName . "&id=" . $id_category . "&page=" . $next;
                 $this->view->pagination = $pagination;
-                echo $this->view->render(__DIR__ . '/../Views/layout/main.php', __DIR__ . '/../Views/main/category.php');
+                echo $this->view->render($this->layoutPath . 'main.php', $this->viewPath . 'category.php');
             } else {
                 $this->actionError404();
             }
@@ -90,7 +96,7 @@ class Main extends Controller {
         $galleries = \Application\Models\Gallery::findAllIsActive();
         $this->view->galleries = $galleries;
 
-        echo $this->view->render(__DIR__ . '/../Views/layout/main.php', __DIR__ . '/../Views/main/gallery.php');
+        echo $this->view->render($this->layoutPath . 'main.php', $this->viewPath . 'gallery.php');
     }
 
     protected function actionViewGallery() {
@@ -100,7 +106,7 @@ class Main extends Controller {
             if ($images = \Application\Models\Image::getImagesByGallery($id_gallery)) {
                 $this->view->images = $images;
                 $this->view->gallery = $gallery;
-                echo $this->view->render(__DIR__ . '/../Views/layout/main.php', __DIR__ . '/../Views/main/view-gallery.php');
+                echo $this->view->render($this->layoutPath . 'main.php', $this->viewPath . 'view-gallery.php');
             } else {
                 $this->actionError404();
             }
@@ -126,12 +132,12 @@ class Main extends Controller {
             } else {
                 $this->view->error = "Не верно введены логин или пароль.";
 
-                echo $this->view->render(__DIR__ . '/../Views/layout/main.php', __DIR__ . '/../Views/main/autorize.php');
+                echo $this->view->render($this->layoutPath . 'main.php', $this->viewPath . 'autorize.php');
             }
         } else {
             $this->view->user = $user->getUser();
 
-            echo $this->view->render(__DIR__ . '/../Views/layout/main.php', __DIR__ . '/../Views/main/autorize.php');
+            echo $this->view->render($this->layoutPath . 'main.php', $this->viewPath . 'autorize.php');
         }
     }
 
@@ -142,14 +148,14 @@ class Main extends Controller {
             $search = htmlspecialchars($_POST['search']);
             $pages = \Application\Models\Page::search('content', $search);
             $this->view->pages = $pages;
-            echo $this->view->render(__DIR__ . '/../Views/layout/main.php', __DIR__ . '/../Views/main/search.php');
+            echo $this->view->render($this->layoutPath . 'main.php', $this->viewPath . 'search.php');
         } else {
             $this->actionError404();
         }
     }
 
     protected function actionError404() {
-        echo $this->view->render(__DIR__ . '/../Views/layout/main.php', __DIR__ . '/../Views/main/error404.php');
+        echo $this->view->render($this->layoutPath . 'main.php', $this->viewPath . 'error404.php');
     }
 
     protected function actionLogout() {

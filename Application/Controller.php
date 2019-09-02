@@ -5,6 +5,8 @@ namespace Application;
 class Controller {
 
     protected $view;
+    protected $layoutPath = '';
+    protected $viewPath = '';
     public $controllerName;
     public $actionName;
 

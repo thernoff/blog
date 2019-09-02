@@ -61,8 +61,7 @@ abstract class Model {
     public static function search($field, $search) {
         $db = Db::instance();
         $search = "%$search%";
-        $res = $db->query('SELECT * FROM ' . static::TABLE . ' WHERE ' . $field . ' LIKE :search', static::class, [':search' => $search]);
-        //$res = $db->select('SELECT * FROM ' . static::TABLE . ' WHERE ' . $field . ' LIKE :like', [':like' => $like]);
+        $res = $db->query('SELECT * FROM ' . static::TABLE . ' WHERE ' . $field . ' LIKE :search', static::class, [':search' => $search]);        
         return $res;
     }
 

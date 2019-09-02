@@ -14,6 +14,12 @@ class Admin extends Controller {
 
     private $user;
     private $errors = [];
+    
+    public function __construct($controllerName) {
+        parent::__construct($controllerName);
+        $this->layoutPath = __DIR__ . '/../Views/layout/';
+        $this->viewPath = __DIR__ . '/../Views/admin/';
+    }
 
     protected function beforeAction() {
         $this->user = User::instance()->getUser();
@@ -43,7 +49,7 @@ class Admin extends Controller {
         $this->view->linkNext = "/index.php?controller=" . $this->controllerName . "&action=" . $this->actionName . "&page=" . $next;
         $this->view->pagination = $pagination;
 
-        echo $this->view->render(__DIR__ . '/../Views/layout/admin.php', __DIR__ . '/../Views/admin/index.php');
+        echo $this->view->render($this->layoutPath . 'admin.php', $this->viewPath . 'index.php');
     }
 
     protected function actionCreateArticle() {
@@ -59,7 +65,7 @@ class Admin extends Controller {
         $allTags = Tag::findAll();
         $this->view->allTags = $allTags;
 
-        echo $this->view->render(__DIR__ . '/../Views/layout/admin.php', __DIR__ . '/../Views/admin/form-create-article.php');
+        echo $this->view->render($this->layoutPath . 'admin.php', $this->viewPath . 'form-create-article.php');
     }
 
     protected function actionUpdateArticle() {
@@ -85,7 +91,7 @@ class Admin extends Controller {
         $this->view->checkedTags = $checkedTags;
         $this->view->allTags = $allTags;
 
-        echo $this->view->render(__DIR__ . '/../Views/layout/admin.php', __DIR__ . '/../Views/admin/form-edit-article.php');
+        echo $this->view->render($this->layoutPath . 'admin.php', $this->viewPath . 'form-edit-article.php');
     }
 
     protected function actionDeleteArticle() {
@@ -136,7 +142,7 @@ class Admin extends Controller {
         $map = $page->getTree('blog_categories');
         $this->view->map = $map;
 
-        echo $this->view->render(__DIR__ . '/../Views/layout/admin.php', __DIR__ . '/../Views/admin/form-create-page.php');
+        echo $this->view->render($this->layoutPath . 'admin.php', $this->viewPath . 'form-create-page.php');
     }
 
     protected function actionUpdatePage() {
@@ -183,7 +189,7 @@ class Admin extends Controller {
         $map = $page->getTree('blog_categories');
         $this->view->map = $map;
 
-        echo $this->view->render(__DIR__ . '/../Views/layout/admin.php', __DIR__ . '/../Views/admin/form-update-page.php');
+        echo $this->view->render($this->layoutPath . 'admin.php', $this->viewPath . 'form-update-page.php');
     }
 
     protected function actionDeletePage() {
@@ -208,7 +214,7 @@ class Admin extends Controller {
         $map = \Application\Models\Category::makeTree('blog_categories');
         $this->view->map = $map;
 
-        echo $this->view->render(__DIR__ . '/../Views/layout/admin.php', __DIR__ . '/../Views/admin/category.php');
+        echo $this->view->render($this->layoutPath . 'admin.php', $this->viewPath . 'category.php');
     }
 
     protected function actionCreateCategory() {
@@ -231,7 +237,7 @@ class Admin extends Controller {
         $map = $category->getTree();
         $this->view->map = $map;
 
-        echo $this->view->render(__DIR__ . '/../Views/layout/admin.php', __DIR__ . '/../Views/admin/form-create-category.php');
+        echo $this->view->render($this->layoutPath . 'admin.php', $this->viewPath . 'form-create-category.php');
     }
 
     protected function actionUpdateCategory() {
@@ -261,7 +267,7 @@ class Admin extends Controller {
         $map = $category->getTree();
         $this->view->map = $map;
 
-        echo $this->view->render(__DIR__ . '/../Views/layout/admin.php', __DIR__ . '/../Views/admin/form-update-category.php');
+        echo $this->view->render($this->layoutPath . 'admin.php', $this->viewPath . 'form-update-category.php');
     }
 
     protected function actionDeleteCategory() {
@@ -284,7 +290,7 @@ class Admin extends Controller {
         $menus = \Application\Models\Menu::findAll();
         $this->view->menus = $menus;
 
-        echo $this->view->render(__DIR__ . '/../Views/layout/admin.php', __DIR__ . '/../Views/admin/menu.php');
+        echo $this->view->render($this->layoutPath . 'admin.php', $this->viewPath . 'menu.php');
     }
 
     protected function actionCreateMenu() {
@@ -323,7 +329,7 @@ class Admin extends Controller {
         $pages = \Application\Models\Page::findAll();
         $this->view->pages = $pages;
 
-        echo $this->view->render(__DIR__ . '/../Views/layout/admin.php', __DIR__ . '/../Views/admin/form-create-menu.php');
+        echo $this->view->render($this->layoutPath . 'admin.php', $this->viewPath . 'form-create-menu.php');
     }
 
     protected function actionUpdateMenu() {
@@ -366,7 +372,7 @@ class Admin extends Controller {
         $pages = \Application\Models\Page::findAll();
         $this->view->pages = $pages;
 
-        echo $this->view->render(__DIR__ . '/../Views/layout/admin.php', __DIR__ . '/../Views/admin/form-update-menu.php');
+        echo $this->view->render($this->layoutPath . 'admin.php', $this->viewPath . 'form-update-menu.php');
     }
 
     protected function actionDeleteMenu() {
@@ -389,7 +395,7 @@ class Admin extends Controller {
         $galleries = \Application\Models\Gallery::findAll();
         $this->view->galleries = $galleries;
 
-        echo $this->view->render(__DIR__ . '/../Views/layout/admin.php', __DIR__ . '/../Views/admin/gallery.php');
+        echo $this->view->render($this->layoutPath . 'admin.php', $this->viewPath . 'gallery.php');
     }
 
     protected function actionCreateGallery() {
@@ -408,7 +414,7 @@ class Admin extends Controller {
         $this->view->errors = $this->errors;
         $this->view->gallery = $gallery;
 
-        echo $this->view->render(__DIR__ . '/../Views/layout/admin.php', __DIR__ . '/../Views/admin/form-create-gallery.php');
+        echo $this->view->render($this->layoutPath . 'admin.php', $this->viewPath . 'form-create-gallery.php');
     }
 
     protected function actionUpdateGallery() {
@@ -443,7 +449,7 @@ class Admin extends Controller {
         $this->view->gallery = $gallery;
         $this->view->images = $images;
 
-        echo $this->view->render(__DIR__ . '/../Views/layout/admin.php', __DIR__ . '/../Views/admin/form-update-gallery.php');
+        echo $this->view->render($this->layoutPath . 'admin.php', $this->viewPath . 'form-update-gallery.php');
     }
 
     protected function actionAddPhoto() {
@@ -478,7 +484,7 @@ class Admin extends Controller {
             $this->view->gallery = $gallery;
         }
 
-        echo $this->view->render(__DIR__ . '/../Views/layout/admin.php', __DIR__ . '/../Views/admin/form-upload-photo.php');
+        echo $this->view->render($this->layoutPath . 'admin.php', $this->viewPath . 'form-upload-photo.php');
     }
 
     protected function actionDeletePhoto() {
@@ -516,7 +522,7 @@ class Admin extends Controller {
         $this->view->gallery = $gallery;
         $this->view->images = $images;
 
-        echo $this->view->render(__DIR__ . '/../Views/layout/admin.php', __DIR__ . '/../Views/admin/form-delete-photo.php');
+        echo $this->view->render($this->layoutPath . 'admin.php', $this->viewPath . 'form-delete-photo.php');
     }
 
 }

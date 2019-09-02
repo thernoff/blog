@@ -78,7 +78,7 @@ class Db {
                 yield $res;
             }
         } else {
-            throw new \Application\Exceptions\Db('Ошибка в запросе.');
+            throw new \Application\Exceptions\Db('Ошибка в запросе: ' . $sql);
         }
     }
 
